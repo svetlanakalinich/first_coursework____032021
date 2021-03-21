@@ -1,0 +1,22 @@
+.posts {
+  display: block;
+
+  @include lg-min {
+    padding-top: $gap * 5;
+    padding-bottom: $gap * 5;
+  }
+  @include lg-md {
+    padding-top: $gap * 4;
+    padding-bottom: $gap * 4;
+  }
+  @include md {
+    padding-top: $gap * 3;
+    padding-bottom: $gap * 3;
+  }
+
+  &__container {
+    @extend %container;
+  }
+}
+
+

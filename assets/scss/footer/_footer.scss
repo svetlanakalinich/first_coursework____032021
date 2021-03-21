@@ -1,0 +1,11 @@
+.footer {
+  padding: ($gap / 2 * 5) $gap ($gap / 2 * 7);
+
+  text-align: center;
+
+  background-color: $color-primary;
+}
+
+.footer__container {
+  @extend %container;
+}

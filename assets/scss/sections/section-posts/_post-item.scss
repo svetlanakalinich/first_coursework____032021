@@ -1,0 +1,53 @@
+.post-item {
+  transition: background-color 0.5s;
+
+  background-color: rgba(242, 242, 242, 1);
+
+  &:nth-of-type(1) {
+    grid-area: a1;
+  }
+
+  &:nth-of-type(2) {
+    grid-area: a2;
+  }
+
+  &:nth-of-type(3) {
+    grid-area: a3;
+  }
+
+  &:nth-of-type(4) {
+    grid-area: a4;
+  }
+
+  &:nth-of-type(5) {
+    grid-area: a5;
+  }
+
+  &:nth-of-type(6) {
+    grid-area: a6;
+  }
+
+  &__link {
+    display: grid;
+
+    height: 100%;
+
+    grid-template-rows: 300px 1fr;
+  }
+
+  :hover {
+    background-color: rgba(216, 216, 216, 1);
+  }
+
+  :hover h3 {
+    color: $color-primary;
+  }
+
+  :hover p {
+    color: $color-primary;
+  }
+
+  :hover .post-item__image img {
+    transform: scale(1.1);
+  }
+}

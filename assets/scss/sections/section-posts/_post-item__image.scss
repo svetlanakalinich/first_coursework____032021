@@ -1,0 +1,14 @@
+.post-item__image {
+  display: flex;
+  overflow: hidden;
+  align-content: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+
+    transition: transform 0.5s;
+
+    object-fit: cover;
+  }
+}

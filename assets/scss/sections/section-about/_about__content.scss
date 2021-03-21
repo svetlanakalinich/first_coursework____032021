@@ -1,0 +1,45 @@
+.about__content {
+  @include lg-min {
+    font-size: 1.125rem;
+  }
+  @include sm {
+    display: block;
+    & p:first-of-type::after {
+      display: none;
+    }
+  }
+  p:first-of-type {
+    position: relative;
+
+    margin-top: -5px;
+  }
+
+  p:first-of-type::after {
+    position: absolute;
+    top: 0;
+
+    width: 2px;
+    height: $gap * 10;
+
+    content: "";
+
+    background-color: rgba(99, 117, 136, 0.1);
+
+    @include lg-min {
+      right: -($gap / 2 * 5);
+    }
+    @include lg-md {
+      right: (-$gap);
+    }
+    @include md-sm {
+      right: -($gap / 2);
+    }
+    @include sm {
+      display: none;
+    }
+  }
+
+  p:last-of-type {
+    margin: 0;
+  }
+}

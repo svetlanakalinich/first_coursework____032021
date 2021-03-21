@@ -1,0 +1,19 @@
+.form__container {
+  display: grid;
+
+  max-width: $ul;
+  margin: auto;
+  padding: ($gap / 2 * 3) $gap;
+
+  gap: $gap;
+  grid-template-columns: repeat(3, 1fr);
+  @include lg-md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include md-sm {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+}

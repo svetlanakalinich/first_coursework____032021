@@ -1,0 +1,44 @@
+
+@import "../../libs/normalize-scss/sass/normalize/import-now";
+@import "skin";
+@import "variables";
+@import "mixins";
+@import "mixins-media";
+@import "extends";
+
+@import "common";
+@import "header/header";
+@import "header/header-overlay";
+@import "header/header-menu";
+@import "header/header-logo";
+@import "header/header-navbar";
+@import "header/header-content";
+
+@import "sections/section-skills/skills";
+@import "sections/section-skills/skill-item";
+@import "sections/section-skills/skill-item__image";
+@import "sections/section-skills/skill-item__title";
+@import "sections/section-skills/skill-item_overlay";
+@import "sections/section-skills/skill-item__link";
+
+
+@import "sections/section-about/about";
+@import "sections/section-about/about__container";
+@import "sections/section-about/about__content";
+@import "sections/section-about/about__image";
+
+@import "sections/section-form/form";
+@import "sections/section-form/form__container";
+@import "sections/section-form/form-item";
+
+
+@import "sections/section-posts/posts";
+@import "sections/section-posts/post__box";
+@import "sections/section-posts/post-item";
+@import "sections/section-posts/post-item__image";
+@import "sections/section-posts/post-item__caption";
+
+
+@import "footer/footer";
+@import "footer/footer__social";
+@import "footer/footer__copy";

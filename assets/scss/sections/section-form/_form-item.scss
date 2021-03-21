@@ -1,0 +1,52 @@
+.form-item {
+  display: inline;
+
+  @include md-sm {
+    display: grid;
+    &:nth-of-type(1) {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: $gap * 3;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.form-item__input {
+  display: block;
+  padding: 0 ($gap / 2 * 3);
+  
+  transition: border-color 0.5s, background-color 0.5s;
+  letter-spacing: 0.15em;
+
+  color: $color-light;
+  border: 2px solid rgba($color-light, 0);
+  border-bottom-color: rgba($color-light, 0.25);
+  background-color: rgba($color-light, 0.05);
+
+  font-size: 1.125rem;
+  font-weight: 400;
+
+ 
+  &:hover,
+  &:focus {
+    border: 2px solid rgba($color-light, 0.15);
+    border-bottom-color: $color-light;
+    background-color: rgba($color-light, 0.15);
+  }
+
+  &::placeholder {
+    color: $color-gray;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: #8c9bab;
+  }
+}

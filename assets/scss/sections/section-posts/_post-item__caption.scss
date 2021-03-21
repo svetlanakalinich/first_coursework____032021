@@ -1,0 +1,45 @@
+.post-item__caption {
+  display: grid;
+  align-content: center;
+
+  padding: $gap;
+
+  h3 {
+    transition: color 0.5s;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: $color-gray;
+
+    font-family: $font-header;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  p {
+    transition: color 0.5s;
+    text-align: center;
+    letter-spacing: normal;
+
+    font-size: 1rem;
+  }
+
+  :hover h3 {
+    color: $color-primary;
+  }
+
+  :hover p {
+    color: $color-primary;
+  }
+}
+
+.posts__actions {
+  display: flex;
+  justify-content: center;
+
+  @include sm-min {
+    .btn--primary {
+      min-width: 350px;
+    }
+  }
+}

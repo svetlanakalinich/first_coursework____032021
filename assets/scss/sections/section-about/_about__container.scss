@@ -1,0 +1,21 @@
+.about__container {
+  display: grid;
+
+  @extend %container;
+  @include lg-min {
+    gap: 100px;
+    grid-template-columns: 1fr 271px;
+  }
+  @include lg-md {
+    gap: $gap * 2;
+    grid-template-columns: 1fr 271px;
+  }
+  @include md-sm {
+    gap: $gap;
+    grid-template-columns: 1fr 236px;
+  }
+  @include sm {
+    gap: $gap;
+    grid-template-columns: 1fr;
+  }
+}
