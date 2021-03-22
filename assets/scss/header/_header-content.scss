@@ -1,7 +1,6 @@
 .header-content {
   position: relative;
 
-
   &__container {
     display: block;
 
@@ -19,8 +18,6 @@
 
     .btn {
       @include md {
-        padding-top: 2px;
-
         letter-spacing: 0.05em;
       }
     }
@@ -47,5 +44,3 @@
     }
   }
 }
-
-

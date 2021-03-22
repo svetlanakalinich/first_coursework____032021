@@ -1340,7 +1340,6 @@ p {
             box-shadow: -5px 5px 20px -10px black;
   }
   .header-content__actions .btn {
-    padding-top: 2px;
     letter-spacing: 0.05em;
   }
   .header-content__title {
